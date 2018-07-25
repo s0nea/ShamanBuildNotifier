@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shaman Build Notifier</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="popup.js"></script>
+  <link rel="stylesheet" type="text/css" href="popup.css" />
+</head>
+<body>
+  <h1>Shaman Build Notifier</h1>
+  <form>
+    <input type="text" id="branchName" placeholder="Branch Name">
+    <input type="text" id="sha1" placeholder="sha1">
+    <input type="button" id="addBranch" value="Add Branch">
+  </form>
+  <table>
+    <thead>
+        <tr>
+          <th>Select</th>
+          <th>Branch</th>
+          <th>Sha1</th>
+          <th>Total</th>
+          <th>Succeeded</th>
+          <th>Failed</th>
+        </tr>
+    </thead>
+    <tbody id="overviewTbl">
+    </tbody>
+  </table>
+  <input type="button" id="deleteBranch" value="Delete Branch">
+</body>
+</html>

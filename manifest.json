@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+
+  "name": "Shaman Build Notifier",
+  "description": "Notifies you about failed or succeeded Shaman builds",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
